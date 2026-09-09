@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caesar Cipher</title>
+</head>
+<body>
+
+<h1>Caesar Cipher</h1>
+
+<form method="POST">
+
+    <label>Enter Message:</label><br>
+    <textarea name="message" rows="5" cols="50"></textarea>
+    <br><br>
+
+    <label>Enter Shift:</label><br>
+    <input type="number" name="shift" value="3">
+    <br><br>
+
+    <button type="submit">Encrypt & Decrypt</button>
+
+</form>
+
+{% if encrypted %}
+    <h2>Result</h2>
+    <p><b>Encrypted:</b> {{ encrypted }}</p>
+    <p><b>Decrypted:</b> {{ decrypted }}</p>
+{% endif %}
+
+</body>
+</html>
